@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A heartfelt birthday celebration for Amanda Kyla">
+  <title>Happy Birthday, Amanda Kyla! 🎉</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <div class="nav-controls">
+        <button id="audio-toggle" class="icon-btn" aria-label="Toggle background music" aria-pressed="false">
+          <svg class="music-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13M9 18c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm12-3c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/>
+          </svg>
+          <svg class="mute-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13M9 18c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/>
+            <line x1="2" y1="2" x2="22" y2="22" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="hero" role="region" aria-label="Birthday greeting">
+      <div class="hero-content">
+        <button id="celebrate-hero" class="icon-btn celebrate-btn" aria-label="Celebrate">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M3 22l3-7 7-3-7 3-3 7zm9-9l6-6m-2 8l2-2m-8-2l2-2"/>
+          </svg>
+        </button>
+        <div class="decorative-element" aria-hidden="true">
+          <svg class="parallax-layer layer-1" width="100" height="100" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="var(--accent-light)" opacity="0.3"/>
+          </svg>
+          <svg class="parallax-layer layer-2" width="80" height="80" viewBox="0 0 80 80">
+            <circle cx="40" cy="40" r="30" fill="var(--accent-color)" opacity="0.2"/>
+          </svg>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-line">Happy Birthday,</span>
+          <span class="hero-name">Amanda Kyla caesaria putri supriyono</span>
+        </h1>
+        <p class="hero-subtitle">iyee iyee tua iyee</p>
+      </div>
+      <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    </section>
+
+    <section class="personal-message-section" role="region" aria-labelledby="personal-message-heading">
+      <div class="personal-message-container">
+        <h2 id="personal-message-heading">A 'lil-bit' Message for You, I guess?</h2>
+        <div class="personal-message-card">
+          <div class="message-content">
+            <p class="message-intro">Dear Kyla,</p>
+            <p class="message-body">
+              Last year, I wrote that the universe held its breath for your story. Now we find ourselves here once more, another year quietly unfolding within your becoming. Time keeps its steady pace, yet something in you remains unchanged. the warmth, the laughter, the gentle balance between chaos and calm that only you carry.
+            </p>
+            <p class="message-body">
+              You’ve grown in ways that slip beyond the reach of words. There’s a soft resilience in the way you move through your days, even the heavy ones, still gathering fragments of light where most would find none. You’ve almost learned to waltz with life itself, imperfectly yet beautifully human.
+            </p>
+            <p class="message-body">
+              Semoga di usia lo yang baru ini, semuanya makin jelas dan ringan buat lo, pelan-pelan nemuin arah lo sendiri. Gue harap lo selalu dikelilingi hal-hal yang tulus dan orang-orang yang bener-bener ngerti lo. Semua doa baik yang tahun lalu gue tulis buat lo semoga masih nempel, dan datang lagi dalam bentuk yang baru. Gue harap lo masih punya ruang buat mimpi, buat tumbuh, dan buat istirahat.
+            </p>
+            <p class="message-body">
+              And if the world ever feels tired and everything gets too loud, please remember you don’t have to rush. You’ve come so far. You’re already becoming everything you were meant to be just by trying, by existing, by being here. I’m proud of you.
+            </p>
+            <p class="message-body">
+              I’m still rooting for you. Always have, always will. Happy 20’s once again, welcome to the club, kyl!
+            </p>
+            <p class="message-signature">best wishes,<br><span class="signature-name">Wizzy</span></p>
+          </div>
+          <div class="message-decoration" aria-hidden="true">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M38 12c-2.2 0-4.3.5-6.1 1.4 6.6 3.4 11.1 10.3 11.1 18.2S38.5 46.6 31.9 50c1.8.9 3.9 1.4 6.1 1.4 9 0 16.3-7.3 16.3-16.3S46.9 12 38 12z" fill="var(--accent-color)" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slideshow-section" role="region" aria-labelledby="slideshow-heading">
+      <h2 id="slideshow-heading">Cherished Memories</h2>
+      <div class="slideshow-container">
+        <div id="slideshow" class="slideshow" role="region" aria-roledescription="carousel" aria-label="Memory slideshow"></div>
+        <div class="slideshow-controls">
+          <button id="prev-slide" class="slide-btn" aria-label="Previous memory">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+          <div id="slide-indicators" class="slide-indicators" role="tablist" aria-label="Slide navigation"></div>
+          <button id="next-slide" class="slide-btn" aria-label="Next memory">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="background-music" loop preload="none">
+    <source src="assets/audio/birthday-music.mp3" type="audio/mpeg"/>
+    Your browser does not support the audio element.
+  </audio>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
