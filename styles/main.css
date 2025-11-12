@@ -935,40 +935,261 @@ footer p {
   color: var(--text-secondary);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Small mobile devices */
+@media (max-width: 480px) {
   .hero {
-    min-height: 80vh;
-    padding: var(--space-xl) var(--space-md);
+    min-height: 75vh;
+    padding: var(--space-lg) var(--space-sm);
   }
   
   .hero-name {
-    font-size: var(--text-4xl);
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
   }
   
-  .messages-grid {
-    grid-template-columns: 1fr;
+  .personal-message-section,
+  .slideshow-section {
+    padding: var(--space-xl) var(--space-sm);
+  }
+  
+  .personal-message-card {
+    padding: var(--space-md);
+  }
+  
+  .message-body {
+    font-size: var(--text-sm);
+  }
+  
+  .slide-content {
+    max-width: 95%;
+    padding: var(--space-sm);
+  }
+  
+  .slide-year {
+    font-size: var(--text-xl);
+  }
+  
+  .slide-caption {
+    font-size: var(--text-sm);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Typography adjustments */
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-2xl); }
+  
+  /* Header */
+  nav {
+    padding: var(--space-sm) var(--space-md);
+  }
+  
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 85vh;
+    padding: var(--space-xl) var(--space-md);
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .hero-line {
+    font-size: var(--text-xl);
+  }
+  
+  .hero-name {
+    font-size: clamp(2rem, 10vw, 2.5rem);
+    line-height: 1.1;
+  }
+  
+  .hero-subtitle {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .celebrate-btn {
+    width: 40px;
+    height: 40px;
+    margin-bottom: var(--space-sm);
+  }
+  
+  /* Personal Message Section */
+  .personal-message-section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .personal-message-container {
+    max-width: 100%;
+  }
+  
+  .personal-message-section h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-xl);
+  }
+  
+  .personal-message-card {
+    padding: var(--space-lg);
+    gap: var(--space-md);
+  }
+  
+  .message-intro {
+    font-size: var(--text-lg);
+  }
+  
+  .message-body {
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+  
+  .message-signature {
+    font-size: var(--text-sm);
+    margin-top: var(--space-lg);
+  }
+  
+  .message-decoration {
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 45px;
+    height: 45px;
+  }
+  
+  .message-decoration svg {
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Slideshow Section */
+  .slideshow-section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .slideshow-section h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-xl);
+  }
+  
+  .slideshow-container {
+    max-width: 100%;
   }
   
   .slideshow {
     aspect-ratio: 4 / 3;
+    border-radius: var(--radius-md);
   }
   
-  nav {
-    padding: var(--space-sm) var(--space-md);
+  .slide {
+    padding: var(--space-lg);
+  }
+  
+  .slide-content {
+    max-width: 90%;
+    padding: var(--space-md);
+  }
+  
+  .slide-year {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .slide-caption {
+    font-size: var(--text-base);
+    line-height: 1.5;
+  }
+  
+  .slideshow-controls {
+    margin-top: var(--space-lg);
+    gap: var(--space-md);
+  }
+  
+  .slide-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .slide-indicator {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .slide-indicator.active {
+    width: 24px;
+  }
+  
+  /* Messages Grid */
+  .messages-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  /* Sky Ornaments - reduce on mobile */
+  .sky-ornaments .star {
+    width: 3px;
+    height: 3px;
+  }
+  
+  .sky-ornaments .cloud {
+    width: 150px;
+    height: 55px;
+  }
+  
+  .sky-ornaments .cloud.large {
+    width: 200px;
+    height: 75px;
+  }
+  
+  .sky-ornaments .cloud.small {
+    width: 120px;
+    height: 45px;
+  }
+  
+  /* Ensure touch targets are at least 44px */
+  button, .icon-btn, .slide-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-lg) var(--space-md);
+  }
+  
+  .hero-name {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  
+  .personal-message-section,
+  .slideshow-section {
+    padding: var(--space-xl) var(--space-md);
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-name {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+  }
+  
+  .personal-message-container {
+    max-width: 90%;
+  }
+  
+  .slideshow-container {
+    max-width: 95%;
   }
 }
 
 @media (min-width: 1024px) {
   .messages-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Additional responsive tweaks */
-@media (max-width: 768px) {
-  .personal-message-card {
-    padding: var(--space-xl);
   }
 }
 
